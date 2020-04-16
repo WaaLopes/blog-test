@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `My blog`,
+    position: `Front-end developer`,
     description: `A blog about front-end development for studying purposes`,
-    author: `@gatsbyjs`,
+    author: `Wagner Lopes`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -24,7 +26,6 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
